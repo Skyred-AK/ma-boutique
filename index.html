@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Boutique - Mode et Accessoires</title>
+    <title>Ma Boutique</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <div class="logo">
-            <h1>Ma Boutique</h1>
+            <h1><a href="/">Ma Boutique</a></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#running">Ensembles Running</a></li>
-                <li><a href="#bas-surv">Bas de Survêtement</a></li>
-                <li><a href="#hauts">Hauts</a></li>
-                <li><a href="#baskets">Baskets</a></li>
-                <li><a href="#maillots">Maillots</a></li>
+                <li><a href="/categorie/running">Running</a></li>
+                <li><a href="/categorie/survetement">Survêtements</a></li>
+                <li><a href="/categorie/hauts">Hauts</a></li>
+                <li><a href="/categorie/baskets">Baskets</a></li>
+                <li><a href="/categorie/maillots">Maillots</a></li>
             </ul>
         </nav>
+        <div class="cart">
+            <a href="/panier"><img src="cart-icon.png" alt="Panier"></a>
+        </div>
     </header>
 
-    <!-- Section des catégories -->
-    <section id="categories">
-        <div class="category" id="running">
-            <h2>Ensembles Running</h2>
-            <div class="product">
-                <img src="product1.jpg" alt="Ensemble Running 1">
+    <!-- Section des produits -->
+    <section class="products">
+        <h2>Produits en vedette</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Produit 1">
+                <h3>Ensemble Running 1</h3>
+                <p>Prix: 49,99€</p>
                 <button>Ajouter au panier</button>
             </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Ensemble Running 2">
+            <div class="product-item">
+                <img src="product2.jpg" alt="Produit 2">
+                <h3>Bas de Survêtement 2</h3>
+                <p>Prix: 39,99€</p>
                 <button>Ajouter au panier</button>
             </div>
+            <!-- Ajouter d'autres produits ici -->
         </div>
-
-        <!-- Répéter pour les autres catégories -->
     </section>
 
     <!-- Footer -->
