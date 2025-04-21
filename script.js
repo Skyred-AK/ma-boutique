@@ -1,8 +1,14 @@
-// Exemple pour afficher un message lorsque l'article est ajouté au panier
-const buttons = document.querySelectorAll('button');
+let cart = [];
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        alert("L'article a été ajouté au panier !");
+document.querySelectorAll('.product-item button').forEach(button => {
+    button.addEventListener('click', function() {
+        const product = {
+            name: this.parentElement.querySelector('h3').innerText,
+            price: this.parentElement.querySelector('p').innerText,
+        };
+
+        cart.push(product);
+        alert(`${product.name} a été ajouté au panier.`);
+        console.log(cart);
     });
 });
