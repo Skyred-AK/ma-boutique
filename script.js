@@ -1,6 +1,8 @@
-// Ajout d'un événement sur tous les boutons "Ajouter au panier"
-document.querySelectorAll('.add-to-cart').forEach(button => {
+// Exemple pour afficher un message lorsque l'article est ajouté au panier
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
     button.addEventListener('click', () => {
-        alert('Produit ajouté au panier !');
+        alert("L'article a été ajouté au panier !");
     });
 });
