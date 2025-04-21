@@ -1,6 +1,6 @@
-// Exemple simple pour gérer l'ajout au panier
-document.querySelectorAll('button').forEach(button => {
+// Ajout d'un événement sur tous les boutons "Ajouter au panier"
+document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', () => {
-        alert('Article ajouté au panier !');
+        alert('Produit ajouté au panier !');
     });
 });
