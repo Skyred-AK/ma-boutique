@@ -1,24 +1,30 @@
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+header a {
+    color: white;
+    text-decoration: none;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -29,60 +35,58 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
-#categories {
+.products {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 0;
 }
 
-.category {
-    width: 30%;
+.product-item {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-}
-
-.category h2 {
+    width: 250px;
+    margin: 15px;
     text-align: center;
-    color: #333;
 }
 
-.product {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.product img {
+.product-item img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-.product button {
+button {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.product button:hover {
+button:hover {
     background-color: #218838;
 }
 
 footer {
-    background-color: #333;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+    }
 }
