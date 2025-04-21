@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ma Boutique</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique E-Commerce</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
 </head>
 <body>
-  <h1>Bienvenue sur Ma Boutique!</h1>
-  <p>Votre boutique en ligne de produits exclusifs.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#running">Ensembles Running</a></li>
+                <li><a href="#bas-survetement">Bas de Survêtement</a></li>
+                <li><a href="#haut">Hauts</a></li>
+                <li><a href="#basket">Baskets</a></li>
+                <li><a href="#maillots">Maillots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="running">
+            <h2>Ensembles Running</h2>
+            <div class="products">
+                <!-- Liste de produits pour la catégorie Running -->
+                <div class="product">
+                    <img src="img/ensemble_running_1.jpg" alt="Ensemble Running 1">
+                    <p>Ensemble Running 1</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="img/ensemble_running_2.jpg" alt="Ensemble Running 2">
+                    <p>Ensemble Running 2</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bas-survetement">
+            <h2>Bas de Survêtement</h2>
+            <div class="products">
+                <!-- Liste de produits pour la catégorie Bas de Survêtement -->
+                <div class="product">
+                    <img src="img/bas_survetement_1.jpg" alt="Bas Survêtement 1">
+                    <p>Bas Survêtement 1</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="img/bas_survetement_2.jpg" alt="Bas Survêtement 2">
+                    <p>Bas Survêtement 2</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="haut">
+            <h2>Hauts</h2>
+            <div class="products">
+                <!-- Liste de produits pour la catégorie Hauts -->
+                <div class="product">
+                    <img src="img/haut_1.jpg" alt="Haut 1">
+                    <p>Haut 1</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="img/haut_2.jpg" alt="Haut 2">
+                    <p>Haut 2</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="basket">
+            <h2>Baskets</h2>
+            <div class="products">
+                <!-- Liste de produits pour la catégorie Baskets -->
+                <div class="product">
+                    <img src="img/basket_1.jpg" alt="Basket 1">
+                    <p>Basket 1</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="img/basket_2.jpg" alt="Basket 2">
+                    <p>Basket 2</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="maillots">
+            <h2>Maillots</h2>
+            <div class="products">
+                <!-- Liste de produits pour la catégorie Maillots -->
+                <div class="product">
+                    <img src="img/maillot_1.jpg" alt="Maillot 1">
+                    <p>Maillot 1</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="img/maillot_2.jpg" alt="Maillot 2">
+                    <p>Maillot 2</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ma Boutique. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Lien vers ton fichier JS si nécessaire -->
 </body>
 </html>
